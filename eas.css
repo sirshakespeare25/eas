@@ -1,5 +1,29 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 #container {
-    width: 500px;
-    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 750px;
+    height: 750px;
     border: 2px solid black;
+}
+
+.column {
+    flex: 1 1 auto;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
 }
