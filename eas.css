@@ -1,8 +1,14 @@
 body {
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    gap: 50px;
 }
 
 #container {
@@ -27,3 +33,5 @@ body {
     padding: 0;
     border: 1px solid black;
 }
+
+.highlight {background-color: black;}
