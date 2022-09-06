@@ -3,7 +3,7 @@ reset.addEventListener('click', resetBoard);
 
 function mkRow (input) {
     const num = (input );
-    if (num > 100) { (mkRow(prompt('Number must be under 100!'))); return;};
+    if (num > 100 || !Number(num)) { (mkRow(prompt('Input must be under 100 or was not a number!'))); return;};
     for (let i = 0; i < num; i++) {
         const container = document.querySelector('#container');
         const newDiv = document.createElement('div');
